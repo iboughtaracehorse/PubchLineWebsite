@@ -7,11 +7,6 @@
     --light-text: #F7F6F2;
 }
 
-body {
-
-}
-
-
 
 
 header {
@@ -48,7 +43,6 @@ header {
 
 
 
-
 .main-page-container {
     width: 100%;
     min-height: 820px;
@@ -72,10 +66,6 @@ header {
 
     padding-bottom: 5%;
 
-}
-
-.poster-container, .sublogo-container{
-    grid-row: 1/2;
 }
 
 .poster-container {
@@ -109,6 +99,11 @@ header {
     animation-timing-function: linear;
 }
 
+.logo:last-child {
+    z-index: 3;
+    transform: scale(1.5);
+}
+
 @keyframes spin {
     from {
         transform: translateX(310px) scale(1.2) rotate(0deg);
@@ -117,12 +112,6 @@ header {
         transform: translateX(310px) scale(1.2) rotate(360deg);
     }
 }
-
-.logo:last-child {
-    z-index: 3;
-    transform: scale(1.5);
-}
-
 
 .subtitle-container {
     display: flex;
@@ -165,7 +154,6 @@ header {
 .main-button:hover {
   background-color: var(--green-active);
 }
-
 
 
 
@@ -215,24 +203,44 @@ header {
 .joke-row {
     display: flex;
     flex-direction: row;
-
-    justify-content: space-between;
-    gap: 5%;
-    padding: 2%;
+    gap: 3%;
+    padding-bottom: 5%;
 }
 
 .joke {
     display: flex;
     max-width: 33%;
 
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    position: relative;
+
+    align-items: center;
+}
+
+.joke-background {
+    display: flex;
+    z-index: 2; 
+    width: 100%;
 }
 
 .joke-content {
+    display: flex;
+    flex-direction: wrap;
+    max-height: 200px;
+    min-width: 200px;
+    z-index: 3; 
+
+    transform: translateX(-125%);
+
+    position: relative;
+    text-align: center;
     
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
 }
+
+
 
 
 

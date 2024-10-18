@@ -10,9 +10,21 @@ anime({
 
 
 
-const URL = "https://official-joke-api.appspot.com/jokes/random/27"
+const URL = "https://official-joke-api.appspot.com/jokes/random/27";
 
+fetch(URL)
+    .then(response => response.json())
+    .then(jokesList => {
+        console.log('fetched jokes', jokesList);
+        const jokesElement = document.querySelectorAll('.joke-content');
 
+        jokesList.forEach((joke, index) => {
+            if (jokesElement[index]) {
+                jokesElement[index].innerText = `${joke.setup} - ${joke.punchline}`;}
+        });
+
+    })
+    .catch(error => {console.log(error)})
 
 
 
