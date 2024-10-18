@@ -224,6 +224,13 @@ header {
 .joke {
     display: flex;
     max-width: 33%;
+
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.joke-content {
     
 }
 
