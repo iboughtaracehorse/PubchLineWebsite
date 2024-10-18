@@ -1,6 +1,7 @@
 :root {
     --red-retro: #951E26;
     --green-retro: #599A7E;
+    --green-active: #71AD93;
     --yellow-retro: #E0C9A6;
     --dark-text: #242424;
     --light-text: #F7F6F2;
@@ -32,9 +33,11 @@ header {
 
 .sliding-title span {
     display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 600;
 
     margin-right: 2%;
 }
@@ -116,8 +119,41 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
 } 
 
 .subtitle {
+    display: flex;
 
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-right: 2%;
+}
+
+
+.main-button {
+  background-color: var(--green-retro);
+  border: 2px solid var(--dark-text);
+  border-radius: 30px;
+
+  color: var(--dark-text);
+  cursor: pointer;
+  display: inline-block;
+  
+}
+
+.main-button p {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+.main-button:hover {
+  background-color: var(--green-active);
 }
