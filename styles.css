@@ -11,6 +11,9 @@ body {
 
 }
 
+
+
+
 header {
     max-height: 70px;
 
@@ -42,6 +45,10 @@ header {
     margin-right: 2%;
 }
 
+
+
+
+
 .main-page-container {
     width: 100%;
     min-height: 820px;
@@ -62,6 +69,8 @@ header {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+
+    padding-bottom: 5%;
 
 }
 
@@ -151,9 +160,72 @@ header {
     padding: 0 20px;
     line-height: 20px;
     text-align: center;
-    user-select: none;
 }
 
 .main-button:hover {
   background-color: var(--green-active);
 }
+
+
+
+
+
+.jokes-page-container {
+    width: 100%;
+    min-height: 820px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: var(--green-retro);
+}
+
+.jokes-page {
+    width: 95%;
+    min-height: 500px;
+    max-width: 1100px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    padding-bottom: 5%;
+}
+
+.jokes-title {
+    padding-top: 2%;
+    
+}
+
+.jokes-page p {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.jokes {
+    display: flex;
+    flex-direction: column;
+}
+
+.joke-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    gap: 5%;
+    padding: 2%;
+}
+
+.joke {
+    display: flex;
+    max-width: 33%;
+    
+}
+
+
+
