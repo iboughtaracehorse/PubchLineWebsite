@@ -90,8 +90,20 @@ header {
 .logo:first-child {
     z-index: 2; 
     margin-right: -250px; 
-    transform: scale(1.5);
-    transform: translateX(320px);
+
+    animation-name: spin;
+    animation-duration: 9000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(310px) scale(1.2) rotate(0deg);
+    }
+    to {
+        transform: translateX(310px) scale(1.2) rotate(360deg);
+    }
 }
 
 .logo:last-child {
